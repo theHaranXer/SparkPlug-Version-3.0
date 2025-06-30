@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haran Naresh</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="h-2.png">
+    <!-- For best compatibility, add these additional versions -->
+    <link rel="icon" type="image/png" sizes="32x32" href="h-2.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="h-2.png">
+    <!-- For Apple devices -->
+    <link rel="apple-touch-icon" href="h-2.png">
+    <!-- Tailwind and other assets -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+            scroll-behavior: smooth;
+        }
+        
+        .accent-color {
+            color: #fc8a08;
+        }
+        
+        .accent-bg {
+            background-color: #fc8a08;
+        }
+        
+        .gradient-text {
+            background: linear-gradient(90deg, #fc8a08, #f97316);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(252, 138, 8, 0.1), 0 10px 10px -5px rgba(252, 138, 8, 0.04);
+        }
+        
+        .social-icon:hover {
+            transform: scale(1.1);
+        }
+        
+        .typewriter {
+             white-space: nowrap;
+                overflow: hidden;
+                animation: typing 3.5s steps(40, end);
+                border-right: none; /* Explicitly remove cursor */
+        }
+        
+        @keyframes typing {
+              from { width: 0 }
+              to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #fc8a08; }
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-xl font-bold gradient-text">HARAN</span>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-center space-x-4">
+                        <a href="#about" class="px-3 py-2 rounded-md text-sm font-medium hover:text-orange-500 transition">About</a>
+                        <a href="#skills" class="px-3 py-2 rounded-md text-sm font-medium hover:text-orange-500 transition">Skills</a>
+                        <a href="#journey" class="px-3 py-2 rounded-md text-sm font-medium hover:text-orange-500 transition">Journey</a>
+                        <a href="#connect" class="px-3 py-2 rounded-md text-sm font-medium hover:text-orange-500 transition">Connect</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-500 hover:text-orange-500 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-500 transition">About</a>
+                <a href="#skills" class="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-500 transition">Skills</a>
+                <a href="#journey" class="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-500 transition">Journey</a>
+                <a href="#connect" class="block px-3 py-2 rounded-md text-base font-medium hover:text-orange-500 transition">Connect</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">
+                    Hi, I'm <span class="gradient-text">Haran Naresh K</span>
+                </h1>
+                <div class="typewriter text-xl md:text-2xl mb-6">
+                    Indie Hacker
+                </div>
+                <p class="text-lg mb-8 text-gray-600">
+                    A BBA graduate with a passion for technology, design, and innovation. I blend business acumen with creative solutions to build impactful experiences.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#connect" class="px-6 py-3 rounded-full accent-bg text-white font-medium hover:bg-orange-600 transition shadow-lg">
+                        Let's Connect
+                    </a>
+                    <a href="#journey" class="px-6 py-3 rounded-full border-2 border-orange-500 text-orange-500 font-medium hover:bg-orange-50 transition">
+                        My Journey
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <div class="relative w-64 h-64 md:w-80 md:h-80">
+                    <div class="absolute inset-0 bg-gradient-to-br from-orange-200 to-orange-500 rounded-full opacity-20 blur-xl"></div>
+                    <div class="relative w-full h-full rounded-full overflow-hidden border-4 border-orange-100 shadow-lg floating">
+                        <img src="Profile.jpeg" 
+                             alt="Haran Naresh" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-white rounded-xl shadow-sm">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-2">About Me</h2>
+            <div class="w-20 h-1 accent-bg mx-auto"></div>
+        </div>
+        <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                <p class="text-lg mb-6">
+                    I'm a <span class="font-medium accent-color">BBA graduate</span> from Guru Nanak College and a <span class="font-medium accent-color">Fellow at Nxtwave CCBP 4.0 Academy</span>. Though my background is in commerce, my passion for technology, design, and innovation has led me to explore coding, UI/UX, branding, and business strategy.
+                </p>
+                <p class="text-lg mb-6">
+                    I specialize in <span class="font-medium accent-color">UI/UX, graphic design, and branding</span>, crafting compelling visuals, brand identities, and impactful taglines. As a content writer and creator, I blend strategic storytelling with creativity to engage audiences effectively.
+                </p>
+            </div>
+            <div class="md:w-1/2 bg-gray-50 p-8 rounded-xl">
+                <h3 class="text-xl font-bold mb-4 accent-color">🚀 What drives me?</h3>
+                <p class="mb-6">
+                    A passion for innovation, collaboration, and continuous learning. I believe in fusing business, technology, and design thinking to create groundbreaking solutions.
+                </p>
+                <p>
+                    Soon, I'll be pursuing law, further expanding my multidisciplinary expertise.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold mb-2">My Skills</h2>
+            <div class="w-20 h-1 accent-bg mx-auto"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Skill Card 1 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition card-hover">
+                <div class="text-orange-500 mb-4">
+                    <i class="fas fa-paint-brush text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">UI/UX Design</h3>
+                <p class="text-gray-600">
+                    Crafting intuitive and visually appealing user interfaces that enhance user experience and drive engagement.
+                </p>
+            </div>
+            
+            <!-- Skill Card 2 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition card-hover">
+                <div class="text-orange-500 mb-4">
+                    <i class="fas fa-tag text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Branding</h3>
+                <p class="text-gray-600">
+                    Developing compelling brand identities, logos, and taglines that resonate with target audiences.
+                </p>
+            </div>
+            
+            <!-- Skill Card 3 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition card-hover">
+                <div class="text-orange-500 mb-4">
+                    <i class="fas fa-code text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Frontend Development</h3>
+                <p class="text-gray-600">
+                    Building responsive websites using HTML, CSS, Bootstrap, and now expanding into Python.
+                </p>
+            </div>
+            
+            <!-- Skill Card 4 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition card-hover">
+                <div class="text-orange-500 mb-4">
+                    <i class="fas fa-pen-fancy text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Content Creation</h3>
+                <p class="text-gray-600">
+                    Creating engaging content that informs, educates, and inspires audiences across platforms.
+                </p>
+            </div>
+            
+            <!-- Skill Card 5 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition card-hover">
+                <div class="text-orange-500 mb-4">
+                    <i class="fas fa-language text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Linguistics</h3>
+                <p class="text-gray-600">
+                    Passionate about learning new languages and understanding different cultures through language.
+                </p>
+            </div>
+            
+            <!-- Skill Card 6 -->
+            <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition card-hover">
+                <div class="text-orange-500 mb-4">
+                    <i class="fas fa-lightbulb text-4xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3">Innovation</h3>
+                <p class="text-gray-600">
+                    Combining business, technology, and design thinking to create groundbreaking solutions.
+                </p>
+            </div>
+        </div>
+    </section>
+
+<!-- Journey Section -->
+<section id="journey" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto bg-gray-50 rounded-xl">
+    <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-2">My Journey</h2>
+        <div class="w-20 h-1 accent-bg mx-auto"></div>
+    </div>
+    <div class="relative">
+        <!-- Timeline line -->
+        <div class="hidden md:block absolute left-1/2 h-full w-1 bg-orange-200 transform -translate-x-1/2"></div>
+        
+        <!-- Timeline items -->
+        <div class="space-y-8 md:space-y-0">
+            <!-- 1. Education -->
+            <div class="flex flex-col md:flex-row items-center md:items-start">
+                <div class="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-right">
+                    <h3 class="text-xl font-bold mb-2">BBA Graduate</h3>
+                    <p class="text-gray-600">Guru Nanak College</p>
+                </div>
+                <div class="hidden md:block w-8 h-8 rounded-full accent-bg mx-4 flex-shrink-0"></div>
+                <div class="md:w-1/2 md:pl-12">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <p>Completed my Bachelor's in Business Administration, developing strong business fundamentals and strategic thinking.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 2. Internship -->
+            <div class="flex flex-col md:flex-row items-center md:items-start">
+                <div class="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-right order-1 md:order-none">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <p>
+                            Conducted market research for fintech products at Spinfluence (Zustpe Payments). Created competitor analysis reports and customer segmentation strategies.
+                            <a href="https://drive.google.com/file/d/1pRd-AGKitZTjpQADJ4vguUmClz8Kz7A5/view?usp=sharing" 
+                               class="accent-color hover:underline font-medium" target="_blank">
+                               View Internship Report
+                            </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="hidden md:block w-8 h-8 rounded-full accent-bg mx-4 flex-shrink-0"></div>
+                <div class="md:w-1/2 md:pl-12 order-0 md:order-none">
+                    <h3 class="text-xl font-bold mb-2">Marketing Research Intern</h3>
+                    <p class="text-gray-600">Spinfluence Business Solutions</p>
+                </div>
+            </div>
+
+            <!-- 3. Tech Training -->
+            <div class="flex flex-col md:flex-row items-center md:items-start">
+                <div class="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-right">
+                    <h3 class="text-xl font-bold mb-2">Nxtwave Fellow</h3>
+                    <p class="text-gray-600">CCBP 4.0 Academy</p>
+                </div>
+                <div class="hidden md:block w-8 h-8 rounded-full accent-bg mx-4 flex-shrink-0"></div>
+                <div class="md:w-1/2 md:pl-12">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <p>Completed intensive training in full-stack development, UI/UX design, and data structures.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Tech Projects -->
+            <div class="flex flex-col md:flex-row items-center md:items-start">
+                <div class="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-right order-1 md:order-none">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <p>
+                            Built Kris.ai chatbot and data analytics dashboard while mastering HTML, CSS, JavaScript and React.
+                            <a href="https://krisverse.ccbp.tech/" class="accent-color hover:underline font-medium" target="_blank">View Kris.ai</a> | 
+                            <a href="https://drive.google.com/file/d/1pRd-AGKitZTjpQADJ4vguUmClz8Kz7A5/view?usp=sharing" class="accent-color hover:underline font-medium" target="_blank">View Dashboard</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="hidden md:block w-8 h-8 rounded-full accent-bg mx-4 flex-shrink-0"></div>
+                <div class="md:w-1/2 md:pl-12 order-0 md:order-none">
+                    <h3 class="text-xl font-bold mb-2">Tech Projects</h3>
+                    <p class="text-gray-600">Full-Stack Development</p>
+                </div>
+            </div>
+
+            <!-- 5. Design Work -->
+            <div class="flex flex-col md:flex-row items-center md:items-start">
+                <div class="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-right">
+                    <h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
+                    <p class="text-gray-600">Figma Projects</p>
+                </div>
+                <div class="hidden md:block w-8 h-8 rounded-full accent-bg mx-4 flex-shrink-0"></div>
+                <div class="md:w-1/2 md:pl-12">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <p>
+                            Designed wireframes and prototypes for community apps.
+                            <a href="https://www.figma.com/design/v02wNECzJLvdkXmX895NLP/UI---UX-WORKSHOP-ASSETS--Community-?node-id=0-1&t=Pc9dAWKk0RDl9e4n-1" 
+                               class="accent-color hover:underline font-medium" target="_blank">
+                               View Figma Projects
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Content Creation -->
+            <div class="flex flex-col md:flex-row items-center md:items-start">
+                <div class="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-right order-1 md:order-none">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <p>Built a community of 4,000+ connections through tech content on LinkedIn and YouTube as InnovateXer.</p>
+                    </div>
+                </div>
+                <div class="hidden md:block w-8 h-8 rounded-full accent-bg mx-4 flex-shrink-0"></div>
+                <div class="md:w-1/2 md:pl-12 order-0 md:order-none">
+                    <h3 class="text-xl font-bold mb-2">Content Creation</h3>
+                    <p class="text-gray-600">LinkedIn & YouTube</p>
+                </div>
+            </div>
+
+            <!-- 7. Future Plans -->
+            <div class="flex flex-col md:flex-row items-center md:items-start">
+                <div class="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-right">
+                    <h3 class="text-xl font-bold mb-2">Future Goals</h3>
+                    <p class="text-gray-600">Continuous Growth</p>
+                </div>
+                <div class="hidden md:block w-8 h-8 rounded-full accent-bg mx-4 flex-shrink-0"></div>
+                <div class="md:w-1/2 md:pl-12">
+                    <div class="bg-white p-6 rounded-lg shadow-sm">
+                        <p>Pursuing law studies while continuing to develop tech products at the intersection of business and design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+   
+<!-- Connect Section -->
+<section id="connect" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+    <div class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-2">Let's Connect</h2>
+        <div class="w-20 h-1 accent-bg mx-auto"></div>
+        <p class="text-lg mt-4 max-w-2xl mx-auto">
+            I'm always open to collaborations, discussions about innovation, or just a friendly chat about design and technology.
+        </p>
+    </div>
+    <div class="flex flex-col md:flex-row items-center bg-white rounded-xl shadow-sm overflow-hidden">
+        <div class="md:w-1/2 p-8 md:p-12">
+            <h3 class="text-2xl font-bold mb-6">Get in Touch</h3>
+            <form class="space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition">
+                </div>
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition">
+                </div>
+                <div>
+                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                    <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition"></textarea>
+                </div>
+                <button type="submit" class="w-full px-6 py-3 rounded-full accent-bg text-white font-medium hover:bg-orange-600 transition shadow-lg">
+                    Send Message
+                </button>
+            </form>
+        </div>
+        <div class="md:w-1/2 bg-gradient-to-br from-orange-100 to-orange-200 p-8 md:p-12 flex flex-col justify-center">
+            <h3 class="text-2xl font-bold mb-6 accent-color">Find Me Online</h3>
+            <div class="space-y-4">
+                <a href="https://www.linkedin.com/in/haran-naresh-2a853a258/" target="_blank" class="flex items-center space-x-3 text-gray-700 hover:text-orange-500 transition">
+                    <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm social-icon transition">
+                        <i class="fab fa-linkedin-in text-lg"></i>
+                    </div>
+                    <span>LinkedIn (4,000+ connections)</span>
+                </a>
+                <a href="https://www.youtube.com/@InnovateXer" target="_blank" class="flex items-center space-x-3 text-gray-700 hover:text-orange-500 transition">
+                    <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm social-icon transition">
+                        <i class="fab fa-youtube text-lg"></i>
+                    </div>
+                    <span>YouTube (InnovateXer)</span>
+                </a>
+                <a href="https://x.com/theharanxer" target="_blank" class="flex items-center space-x-3 text-gray-700 hover:text-orange-500 transition">
+                    <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm social-icon transition">
+                        <i class="fab fa-twitter text-lg"></i>
+                    </div>
+                    <span>Twitter/X</span>
+                </a>
+                <a href="https://github.com/HaranNaresh210904" target="_blank" class="flex items-center space-x-3 text-gray-700 hover:text-orange-500 transition">
+                    <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm social-icon transition">
+                        <i class="fab fa-github text-lg"></i>
+                    </div>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://huggingface.co/HaranNaresh2194" target="_blank" class="flex items-center space-x-3 text-gray-700 hover:text-orange-500 transition">
+                    <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm social-icon transition">
+                        <i class="fas fa-robot text-lg"></i>
+                    </div>
+                    <span>HuggingFace</span>
+                </a>
+                <a href="https://medial.app/user/haran-naresh-k-00e0a291a2afa" target="_blank" class="flex items-center space-x-3 text-gray-700 hover:text-orange-500 transition">
+                    <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm social-icon transition">
+                        <i class="fas fa-comment-dots text-lg"></i>
+                    </div>
+                    <span>Medial</span>
+                </a>
+            </div>
+<div class="mt-8 space-y-2">
+    <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm">
+            <i class="fas fa-phone-alt text-lg text-gray-700 transform rotate-180"></i> <!-- Rotated icon -->
+        </div>
+        <div>
+            <span class="text-gray-700">+91 9790815733</span>
+            <div class="flex items-center mt-1">
+                <span class="text-xs text-gray-500 mr-2">Verified</span>
+                <i class="fas fa-check-circle text-green-500 text-sm"></i>
+            </div>
+        </div>
+    </div>
+    <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm">
+            <i class="fas fa-envelope text-lg text-gray-700"></i>
+        </div>
+        <a href="mailto:harannaresh@gmail.com" class="text-gray-700 hover:text-orange-500 transition">harannaresh@gmail.com</a>
+    </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-white py-12 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <span class="text-xl font-bold gradient-text">HARAN NARESH</span>
+                <p class="mt-2 text-gray-400">Innovating at the intersection of business, design & technology.</p>
+            </div>
+            <div class="flex space-x-6">
+                <a href="https://www.linkedin.com/in/haran-naresh-2a853a258/" target="_blank" class="text-gray-400 hover:text-white transition social-icon">
+                    <i class="fab fa-linkedin-in text-xl"></i>
+                </a>
+                <a href="https://www.youtube.com/@InnovateXer" target="_blank" class="text-gray-400 hover:text-white transition social-icon">
+                    <i class="fab fa-youtube text-xl"></i>
+                </a>
+                <a href="https://x.com/theharanxer" target="_blank" class="text-gray-400 hover:text-white transition social-icon">
+                    <i class="fab fa-twitter text-xl"></i>
+                </a>
+                <a href="https://github.com/HaranNaresh210904" target="_blank" class="text-gray-400 hover:text-white transition social-icon">
+                    <i class="fab fa-github text-xl"></i>
+                </a>
+                <a href="https://www.instagram.com/theharan_xer/" target="_blank" class="text-gray-400 hover:text-white transition social-icon">
+                    <i class="fab fa-instagram text-xl"></i>
+                </a>
+                <a href="https://dev.to/haran_2194" target="_blank" class="text-gray-400 hover:text-white transition social-icon">
+                    <i class="fab fa-dev text-xl"></i>
+                </a>
+                <a href="https://medial.app/user/haran-naresh-k-00e0a291a2afa" target="_blank" class="text-gray-400 hover:text-white transition social-icon">
+                    <i class="fas fa-comment-dots text-xl"></i>
+                </a>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+            <p>&copy; <script>document.write(new Date().getFullYear())</script> Haran Naresh K. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 rounded-full accent-bg text-white shadow-lg hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                document.getElementById('mobile-menu').classList.add('hidden');
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Form submission (demo only)
+        const form = document.querySelector('form');
+        if (form) {
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                alert('Thank you for your message! This is a demo form. In a real implementation, this would send your message.');
+                form.reset();
+            });
+        }
+    </script>
+</body>
+</html>

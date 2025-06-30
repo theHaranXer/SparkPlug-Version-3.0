@@ -1,2 +1,12 @@
-# SparkPlug-Version-3.0
-This is my personal/portfolio website
+---
+title: haran-pro
+emoji: 🐳
+colorFrom: gray
+colorTo: yellow
+sdk: static
+pinned: false
+tags:
+  - deepsite
+---
+
+Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
