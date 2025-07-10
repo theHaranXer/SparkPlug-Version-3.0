@@ -257,157 +257,71 @@
         <h2 class="text-3xl font-bold mb-2">My Journey</h2>
         <div class="w-20 h-1 accent-bg mx-auto"></div>
     </div>
-    <div class="relative">
-        <!-- Timeline line -->
-        <div class="hidden md:block absolute left-1/2 h-full w-1 bg-orange-200 transform -translate-x-1/2"></div>
-        
-        <!-- Timeline items -->
-        <div class="space-y-8 md:space-y-0">
-            <!-- 1. Sanskrit Achievement -->
-            <div class="flex flex-col md:flex-row items-center md:items-start">
-                <div class="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-right">
-                    <h3 class="text-xl font-bold mb-2">Sanskrit Topper</h3>
-                    <p class="text-gray-600">High School Achievement</p>
-                </div>
-                <div class="hidden md:block w-8 h-8 rounded-full accent-bg mx-4 flex-shrink-0"></div>
-                <div class="md:w-1/2 md:pl-12">
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
-                        <p>Achieved top marks in Sanskrit during high school, demonstrating early excellence in language studies and cultural appreciation.</p>
-                    </div>
-                </div>
+    
+    <!-- Timeline Grid Layout -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Left Column -->
+        <div class="space-y-8">
+            <!-- 1. Sanskrit Topper -->
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition card-hover h-full">
+                <h3 class="text-xl font-bold mb-2 accent-color">Sanskrit Topper</h3>
+                <p class="text-gray-600 mb-4">High School Achievement</p>
+                <p class="text-gray-700">Achieved top marks in Sanskrit during high school, demonstrating early excellence in language studies and cultural appreciation.</p>
             </div>
 
-            <!-- 2. Education -->
-            <div class="flex flex-col md:flex-row items-center md:items-start">
-                <div class="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-right">
-                    <h3 class="text-xl font-bold mb-2">BBA Graduate</h3>
-                    <p class="text-gray-600">Guru Nanak College</p>
-                </div>
-                <div class="hidden md:block w-8 h-8 rounded-full accent-bg mx-4 flex-shrink-0"></div>
-                <div class="md:w-1/2 md:pl-12">
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
-                        <p>Completed my Bachelor's in Business Administration, developing strong business fundamentals and strategic thinking.</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 3. IBM Tech Type -->
-            <div class="flex flex-col md:flex-row items-center md:items-start">
-                <div class="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-right order-1 md:order-none">
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
-                        <p>
-                            Completed IBM SkillBuild's Tech Type assessment, identifying my strengths in technology and innovation.
-                            <a href="https://app.myinnergenius.com/assessments/317194/results?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjMzMTcyNzM3MTcwLCJwZXJtaXNzaW9ucyI6WyJjb3JlLnZpZXdfYXNzZXNzbWVudCJdfQ.bVs7x3wf2a6wzgxDW4LU3UbduPFuQ0bBZASLY_KWPX8" 
-                               class="accent-color hover:underline font-medium" target="_blank">
-                               View Tech Type Results
-                            </a>
-                        </p>
-                    </div>
-                </div>
-                <div class="hidden md:block w-8 h-8 rounded-full accent-bg mx-4 flex-shrink-0"></div>
-                <div class="md:w-1/2 md:pl-12 order-0 md:order-none">
-                    <h3 class="text-xl font-bold mb-2">Tech Personality</h3>
-                    <p class="text-gray-600">IBM SkillBuild Assessment</p>
-                </div>
+            <!-- 2. BBA Graduate -->
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition card-hover h-full">
+                <h3 class="text-xl font-bold mb-2 accent-color">BBA Graduate</h3>
+                <p class="text-gray-600 mb-4">Guru Nanak College</p>
+                <p class="text-gray-700">Completed my Bachelor's in Business Administration, developing strong business fundamentals and strategic thinking.</p>
             </div>
 
-            <!-- 4. Internship -->
-            <div class="flex flex-col md:flex-row items-center md:items-start">
-                <div class="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-right order-1 md:order-none">
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
-                        <p>
-                            Conducted market research for fintech products at Spinfluence (Zustpe Payments). Created competitor analysis reports and customer segmentation strategies.
-                            <a href="https://drive.google.com/file/d/1pcaszwJnbIyusAOjP6sreb6lILY2iU7C/view?usp=drivesdk" 
-                               class="accent-color hover:underline font-medium" target="_blank">
-                               View Internship Report
-                            </a>
-                        </p>
-                    </div>
-                </div>
-                <div class="hidden md:block w-8 h-8 rounded-full accent-bg mx-4 flex-shrink-0"></div>
-                <div class="md:w-1/2 md:pl-12 order-0 md:order-none">
-                    <h3 class="text-xl font-bold mb-2">Marketing Research Intern</h3>
-                    <p class="text-gray-600">Spinfluence Business Solutions</p>
-                </div>
+            <!-- 3. Tech Personality -->
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition card-hover h-full">
+                <h3 class="text-xl font-bold mb-2 accent-color">Tech Personality</h3>
+                <p class="text-gray-600 mb-4">IBM SkillBuild Assessment</p>
+                <p class="text-gray-700 mb-4">
+                    Completed IBM SkillBuild's Tech Type assessment, identifying my strengths in technology and innovation.
+                </p>
+                <a href="https://app.myinnergenius.com/assessments/317194/results?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjMzMTcyNzM3MTcwLCJwZXJtaXNzaW9ucyI6WyJjb3JlLnZpZXdfYXNzZXNzbWVudCJdfQ.bVs7x3wf2a6wzgxDW4LU3UbduPFuQ0bBZASLY_KWPX8" 
+                   class="accent-color hover:underline font-medium" target="_blank">
+                   View Tech Type Results
+                </a>
+            </div>
+        </div>
+
+        <!-- Right Column -->
+        <div class="space-y-8">
+            <!-- 4. Marketing Research Intern -->
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition card-hover h-full">
+                <h3 class="text-xl font-bold mb-2 accent-color">Marketing Research Intern</h3>
+                <p class="text-gray-600 mb-4">Spinfluence Business Solutions</p>
+                <p class="text-gray-700 mb-4">
+                    Conducted market research for fintech products at Spinfluence (Zustpe Payments). Created competitor analysis reports and customer segmentation strategies.
+                </p>
+                <a href="https://drive.google.com/file/d/1pcaszwJnbIyusAOjP6sreb6lILY2iU7C/view?usp=drivesdk" 
+                   class="accent-color hover:underline font-medium" target="_blank">
+                   View Internship Report
+                </a>
             </div>
 
-            <!-- 5. Tech Training -->
-            <div class="flex flex-col md:flex-row items-center md:items-start">
-                <div class="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-right">
-                    <h3 class="text-xl font-bold mb-2">Nxtwave Fellow</h3>
-                    <p class="text-gray-600">CCBP 4.0 Academy</p>
-                </div>
-                <div class="hidden md:block w-8 h-8 rounded-full accent-bg mx-4 flex-shrink-0"></div>
-                <div class="md:w-1/2 md:pl-12">
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
-                        <p> Learning full-stack development, UI/UX design, data structures, Ai, ML DS </p>
-                    </div>
-                </div>
+            <!-- 5. Nxtwave Fellow -->
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition card-hover h-full">
+                <h3 class="text-xl font-bold mb-2 accent-color">Nxtwave Fellow</h3>
+                <p class="text-gray-600 mb-4">CCBP 4.0 Academy</p>
+                <p class="text-gray-700">Completed intensive training in full-stack development, UI/UX design, and data structures.</p>
             </div>
 
             <!-- 6. Tech Projects -->
-            <div class="flex flex-col md:flex-row items-center md:items-start">
-                <div class="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-right order-1 md:order-none">
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
-                        <p>
-                            Built Kris.ai chatbot and data analytics dashboard while mastering HTML, CSS, JavaScript and React.
-                            <a href="https://krisverse.ccbp.tech/" class="accent-color hover:underline font-medium" target="_blank">View Kris.ai</a> | 
-                            <a href="https://drive.google.com/file/d/1pRd-AGKitZTjpQADJ4vguUmClz8Kz7A5/view?usp=sharing" class="accent-color hover:underline font-medium" target="_blank">View Dashboard</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="hidden md:block w-8 h-8 rounded-full accent-bg mx-4 flex-shrink-0"></div>
-                <div class="md:w-1/2 md:pl-12 order-0 md:order-none">
-                    <h3 class="text-xl font-bold mb-2">Tech Projects</h3>
-                    <p class="text-gray-600">Full-Stack Development</p>
-                </div>
-            </div>
-
-            <!-- 7. Design Work -->
-            <div class="flex flex-col md:flex-row items-center md:items-start">
-                <div class="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-right">
-                    <h3 class="text-xl font-bold mb-2">UI/UX Design</h3>
-                    <p class="text-gray-600">Figma Projects</p>
-                </div>
-                <div class="hidden md:block w-8 h-8 rounded-full accent-bg mx-4 flex-shrink-0"></div>
-                <div class="md:w-1/2 md:pl-12">
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
-                        <p>
-                            Designed wireframes and prototypes for community apps.
-                            <a href="https://www.figma.com/design/v02wNECzJLvdkXmX895NLP/UI---UX-WORKSHOP-ASSETS--Community-?node-id=0-1&t=Pc9dAWKk0RDl9e4n-1" 
-                               class="accent-color hover:underline font-medium" target="_blank">
-                               View Figma Projects
-                            </a>
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 8. Content Creation -->
-            <div class="flex flex-col md:flex-row items-center md:items-start">
-                <div class="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-right order-1 md:order-none">
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
-                        <p>Built a community of 4,000+ connections through tech content on LinkedIn and YouTube as InnovateXer.</p>
-                    </div>
-                </div>
-                <div class="hidden md:block w-8 h-8 rounded-full accent-bg mx-4 flex-shrink-0"></div>
-                <div class="md:w-1/2 md:pl-12 order-0 md:order-none">
-                    <h3 class="text-xl font-bold mb-2">Content Creation</h3>
-                    <p class="text-gray-600">LinkedIn & YouTube</p>
-                </div>
-            </div>
-
-            <!-- 9. Future Plans -->
-            <div class="flex flex-col md:flex-row items-center md:items-start">
-                <div class="md:w-1/2 md:pr-12 mb-4 md:mb-0 md:text-right">
-                    <h3 class="text-xl font-bold mb-2">Future Goals</h3>
-                    <p class="text-gray-600">Continuous Growth</p>
-                </div>
-                <div class="hidden md:block w-8 h-8 rounded-full accent-bg mx-4 flex-shrink-0"></div>
-                <div class="md:w-1/2 md:pl-12">
-                    <div class="bg-white p-6 rounded-lg shadow-sm">
-                        <p>Pursuing law studies while continuing to develop tech products at the intersection of business and design.</p>
-                    </div>
+            <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition card-hover h-full">
+                <h3 class="text-xl font-bold mb-2 accent-color">Tech Projects</h3>
+                <p class="text-gray-600 mb-4">Full-Stack Development</p>
+                <p class="text-gray-700 mb-4">
+                    Built Kris.ai chatbot and data analytics dashboard while mastering HTML, CSS, JavaScript and React.
+                </p>
+                <div class="space-x-4">
+                    <a href="https://krisverse.ccbp.tech/" class="accent-color hover:underline font-medium" target="_blank">View Kris.ai</a>
+                    <a href="https://drive.google.com/file/d/1pRd-AGKitZTjpQADJ4vguUmClz8Kz7A5/view?usp=sharing" class="accent-color hover:underline font-medium" target="_blank">View Dashboard</a>
                 </div>
             </div>
         </div>
