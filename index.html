@@ -68,11 +68,6 @@
         to { width: 100% }
     }
     
-    @keyframes blink-caret {
-        from, to { border-color: transparent }
-        50% { border-color: #a8ff1e; }
-    }
-    
     .floating {
         animation: floating 3s ease-in-out infinite;
     }
@@ -83,98 +78,98 @@
         100% { transform: translateY(0px); }
     }
 
-    /* Updated styles for the new color scheme */
+    /* Updated styles for consistent color scheme */
     .text-gray-800 {
         color: #a8ff1e;
     }
     
     .text-gray-600 {
-        color: #c8ff7a;
+        color: #a8ff1e;
     }
     
     .text-gray-700 {
-        color: #b8ff4a;
+        color: #a8ff1e;
     }
     
     .text-gray-400 {
-        color: #90e000;
+        color: #a8ff1e;
     }
     
     .bg-white {
-        background-color: #000000;
+        background-color: #0c0e57;
     }
     
     .bg-gray-50 {
-        background-color: #111111;
+        background-color: #0c0e57;
     }
     
     .bg-gray-900 {
-        background-color: #000000;
+        background-color: #0c0e57;
     }
     
     .border-gray-300 {
-        border-color: #333333;
+        border-color: #a8ff1e;
     }
     
     .border-gray-800 {
-        border-color: #333333;
+        border-color: #a8ff1e;
     }
     
     .shadow-sm, .shadow-md, .shadow-lg {
         box-shadow: 0 1px 3px 0 rgba(168, 255, 30, 0.2), 0 1px 2px 0 rgba(168, 255, 30, 0.1);
     }
     
-    /* Remove all orange references and replace with green */
-    .hover\:text-orange-500:hover {
+    /* Hover states */
+    .hover\:text-green-400:hover {
         color: #a8ff1e;
     }
     
-    .hover\:bg-orange-50:hover {
-        background-color: #111111;
+    .hover\:bg-green-50:hover {
+        background-color: #1a1c6b;
     }
     
-    .hover\:bg-orange-600:hover {
+    .hover\:bg-green-600:hover {
         background-color: #90e000;
     }
     
-    .focus\:ring-orange-500:focus {
+    .focus\:ring-green-500:focus {
         --tw-ring-color: #a8ff1e;
     }
     
-    .focus\:border-orange-500:focus {
+    .focus\:border-green-500:focus {
         border-color: #a8ff1e;
     }
     
-    /* Gradient updates */
-    .from-orange-100 {
-        --tw-gradient-from: #111111;
-        --tw-gradient-to: rgba(17, 17, 17, 0);
+    /* Gradient updates - using green only */
+    .from-green-100 {
+        --tw-gradient-from: #1a1c6b;
+        --tw-gradient-to: rgba(26, 28, 107, 0);
         --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
     }
     
-    .to-orange-200 {
-        --tw-gradient-to: #1a1a1a;
+    .to-green-200 {
+        --tw-gradient-to: #0c0e57;
     }
     
-    .from-orange-200 {
-        --tw-gradient-from: #1a1a1a;
-        --tw-gradient-to: rgba(26, 26, 26, 0);
+    .from-green-200 {
+        --tw-gradient-from: #0c0e57;
+        --tw-gradient-to: rgba(12, 14, 87, 0);
         --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
     }
     
-    .to-orange-500 {
-        --tw-gradient-to: #000000;
+    .to-green-500 {
+        --tw-gradient-to: #1a1c6b;
     }
     
-    .bg-orange-200 {
-        background-color: #1a1a1a;
+    .bg-green-200 {
+        background-color: #1a1c6b;
     }
     
     /* Form elements */
     input, textarea {
-        background-color: #111111;
+        background-color: #1a1c6b;
         color: #a8ff1e;
-        border-color: #333333;
+        border-color: #a8ff1e;
     }
     
     input::placeholder, textarea::placeholder {
@@ -186,30 +181,13 @@
         --tw-ring-color: #a8ff1e;
     }
     
-    /* Timeline and decorative elements */
-    .bg-orange-100 {
-        background-color: #111111;
-    }
-    
-    .border-orange-100 {
-        border-color: #333333;
-    }
-    
-    .border-orange-500 {
-        border-color: #a8ff1e;
-    }
-    
-    .text-orange-500 {
-        color: #a8ff1e;
-    }
-    
-    /* Green variants for icons and accents */
+    /* Green variants */
     .text-green-400 {
         color: #a8ff1e;
     }
     
     .text-green-300 {
-        color: #c8ff7a;
+        color: #a8ff1e;
     }
     
     .bg-green-400 {
@@ -217,25 +195,38 @@
     }
     
     .bg-green-600 {
-        background-color: #76ff03;
+        background-color: #90e000;
     }
     
     .bg-green-900 {
-        background-color: #1a2e0a;
+        background-color: #1a1c6b;
     }
     
     .border-green-300 {
-        border-color: #c8ff7a;
+        border-color: #a8ff1e;
     }
     
     .from-green-400 {
-        --tw-gradient-from: #a8ff1e;
-        --tw-gradient-to: rgba(168, 255, 30, 0);
+        --tw-gradient-from: #1a1c6b;
+        --tw-gradient-to: rgba(26, 28, 107, 0);
         --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
     }
     
     .to-green-600 {
-        --tw-gradient-to: #76ff03;
+        --tw-gradient-to: #0c0e57;
+    }
+    
+    /* Remove all orange completely */
+    .text-orange-500,
+    .bg-orange-500,
+    .border-orange-500,
+    .hover\:text-orange-500,
+    .hover\:bg-orange-500,
+    .from-orange-100,
+    .to-orange-200,
+    .bg-orange-100,
+    .border-orange-100 {
+        all: unset;
     }
 </style>
 </head>
@@ -833,6 +824,7 @@
     </script>
 </body>
 </html>
+
 
 
 
