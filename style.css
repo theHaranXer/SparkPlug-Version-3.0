@@ -12,7 +12,7 @@ h1 {
 }
 
 p {
-    color: #c8ff7a; /* Lighter green for better readability */
+    color: #c8ff7a;
     font-size: 15px;
     margin-bottom: 10px;
     margin-top: 5px;
@@ -22,9 +22,9 @@ p {
     max-width: 620px;
     margin: 0 auto;
     padding: 16px;
-    border: 1px solid #2d2f7a; /* Dark blue border */
+    border: 1px solid #333333;
     border-radius: 16px;
-    background-color: #1a1c6b; /* Dark blue card background */
+    background-color: #000000;
 }
 
 .card p:last-child {
