@@ -18,66 +18,161 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8fafc;
-            scroll-behavior: smooth;
-        }
-        
-        .accent-color {
-            color: #fc8a08;
-        }
-        
-        .accent-bg {
-            background-color: #fc8a08;
-        }
-        
-        .gradient-text {
-            background: linear-gradient(90deg, #fc8a08, #f97316);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-        
-        .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(252, 138, 8, 0.1), 0 10px 10px -5px rgba(252, 138, 8, 0.04);
-        }
-        
-        .social-icon:hover {
-            transform: scale(1.1);
-        }
-        
-        .typewriter {
-             white-space: nowrap;
-                overflow: hidden;
-                animation: typing 3.5s steps(40, end);
-                border-right: none; /* Explicitly remove cursor */
-        }
-        
-        @keyframes typing {
-              from { width: 0 }
-              to { width: 100% }
-        }
-        
-        @keyframes blink-caret {
-            from, to { border-color: transparent }
-            50% { border-color: #fc8a08; }
-        }
-        
-        .floating {
-            animation: floating 3s ease-in-out infinite;
-        }
-        
-        @keyframes floating {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0px); }
-        }
-    </style>
+ <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    
+    body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #0c0e57;
+        color: #a8ff1e;
+        scroll-behavior: smooth;
+    }
+    
+    .accent-color {
+        color: #a8ff1e;
+    }
+    
+    .accent-bg {
+        background-color: #a8ff1e;
+    }
+    
+    .accent-border {
+        border-color: #a8ff1e;
+    }
+    
+    .gradient-text {
+        background: linear-gradient(90deg, #a8ff1e, #76ff03);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+    
+    .card-hover:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 25px -5px rgba(168, 255, 30, 0.2), 0 10px 10px -5px rgba(168, 255, 30, 0.1);
+    }
+    
+    .social-icon:hover {
+        transform: scale(1.1);
+    }
+    
+    .typewriter {
+        white-space: nowrap;
+        overflow: hidden;
+        animation: typing 3.5s steps(40, end);
+        border-right: none;
+    }
+    
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+    
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+        50% { border-color: #a8ff1e; }
+    }
+    
+    .floating {
+        animation: floating 3s ease-in-out infinite;
+    }
+    
+    @keyframes floating {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+    }
+
+    /* Additional styles for the new color scheme */
+    .text-gray-800 {
+        color: #a8ff1e;
+    }
+    
+    .text-gray-600 {
+        color: #c8ff7a;
+    }
+    
+    .text-gray-700 {
+        color: #b8ff4a;
+    }
+    
+    .text-gray-400 {
+        color: #90e000;
+    }
+    
+    .bg-white {
+        background-color: #1a1c6b;
+    }
+    
+    .bg-gray-50 {
+        background-color: #141660;
+    }
+    
+    .bg-gray-900 {
+        background-color: #080a4a;
+    }
+    
+    .border-gray-300 {
+        border-color: #2d2f7a;
+    }
+    
+    .border-gray-800 {
+        border-color: #2d2f7a;
+    }
+    
+    .shadow-sm, .shadow-md, .shadow-lg {
+        box-shadow: 0 1px 3px 0 rgba(168, 255, 30, 0.1), 0 1px 2px 0 rgba(168, 255, 30, 0.06);
+    }
+    
+    .hover\:text-orange-500:hover {
+        color: #a8ff1e;
+    }
+    
+    .hover\:bg-orange-50:hover {
+        background-color: #141660;
+    }
+    
+    .focus\:ring-orange-500:focus {
+        --tw-ring-color: #a8ff1e;
+    }
+    
+    .focus\:border-orange-500:focus {
+        border-color: #a8ff1e;
+    }
+    
+    .from-orange-100 {
+        --tw-gradient-from: #141660;
+        --tw-gradient-to: rgba(20, 22, 96, 0);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    }
+    
+    .to-orange-200 {
+        --tw-gradient-to: #1a1c6b;
+    }
+    
+    .from-orange-200 {
+        --tw-gradient-from: #1a1c6b;
+        --tw-gradient-to: rgba(26, 28, 107, 0);
+        --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+    }
+    
+    .to-orange-500 {
+        --tw-gradient-to: #0c0e57;
+    }
+    
+    .bg-orange-200 {
+        background-color: #1a1c6b;
+    }
+    
+    input, textarea {
+        background-color: #141660;
+        color: #a8ff1e;
+    }
+    
+    input::placeholder, textarea::placeholder {
+        color: #90e000;
+    }
+</style>
 </head>
 <body class="text-gray-800">
     <!-- Navigation -->
@@ -673,6 +768,7 @@
     </script>
 </body>
 </html>
+
 
 
 
